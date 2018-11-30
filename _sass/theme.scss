@@ -45,7 +45,9 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+  "theme/base",
+  "theme/layout"
 ;
+
+// Custom font
+@import "https://fonts.googleapis.com/css?family=Baloo";
