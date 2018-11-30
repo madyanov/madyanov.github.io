@@ -46,17 +46,6 @@ img {
 }
 
 /**
- * Figures
- */
-figure > img {
-  display: block;
-}
-
-figcaption {
-  font-size: $small-font-size;
-}
-
-/**
  * Lists
  */
 ul, ol {
@@ -88,7 +77,7 @@ a {
     color: darken($brand-color, 15%);
   }
 
-  &:hover:not(.site-title) {
+  &:hover {
     color: $text-color;
     text-decoration: underline;
   }
@@ -113,7 +102,7 @@ a {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
+  @include media-query($on-pad) {
     max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
