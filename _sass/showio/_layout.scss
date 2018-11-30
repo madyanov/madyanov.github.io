@@ -20,6 +20,7 @@
   float: right;
   line-height: $spacing-unit * 3;
   list-style-type: none;
+  margin: 0;
 
   > li {
     padding: 8px;
@@ -33,6 +34,7 @@
 .site-footer {
   @include relative-font-size(0.875);
   padding: $spacing-unit 0;
+  background-color: $grey-color-light;
 }
 
 .footer-heading {
@@ -92,6 +94,7 @@
  * Page content
  */
 .page-content {
+  padding: $spacing-unit 0;
   flex: 1;
 }
 

@@ -1,6 +1,6 @@
 <script>
-    var availableLanguages = ["{{ site.data.projects[page.project].languages | join: '", "' }}"];
     var defaultLanguage = "en";
+    var availableLanguages = ["{{ site.data.projects[page.project].languages | join: '", "' }}"];
 
     var browserLanguage = (
         (window.navigator.userLanguage || window.navigator.language).split('-')[0] || defaultLanguage

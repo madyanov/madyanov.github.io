@@ -1,9 +1,11 @@
+{%- assign project = site.data.projects[page.project] -%}
+
 <header class="site-header" role="banner">
 
   <div class="wrapper">
     {% assign home_page = site.pages | where: 'lang', page.lang | where: 'ref', 'index' | first %}
     <a class="site-title" href="{{ home_page.url | relative_url }}">
-      {{ site.data.projects[page.project].name | escape }}
+      {{ project.logo | default: project.name | escape }}
     </a>
 
     <ul class="lang-selector">
