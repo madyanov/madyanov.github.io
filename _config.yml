@@ -1,15 +1,2 @@
-# Site settings
-title: My Site
-email: romantaken@gmail.com
-description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: ""
-url: "https://madyanov.github.io/"
-
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
-markdown: kramdown
+author: Roman Madyanov
+url: https://madyanov.github.io/

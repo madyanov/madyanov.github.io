@@ -1,0 +1,17 @@
+showio:
+  name: showio
+  email: showioapp@hotmail.com
+  languages:
+    - en
+    - ru
+  translations:
+    en:
+      description: Simple TV show tracker
+      legal: Legal
+      privacy: Privacy Policy
+      contacts: Contacts
+    ru:
+      description: Удобный трекер сериалов
+      legal: Правовая информация
+      privacy: Политика конфиденциальности
+      contacts: Контакты

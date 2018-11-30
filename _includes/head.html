@@ -1,11 +1,32 @@
+{%- assign project = site.data.projects[page.project] -%}
+{%- assign translation = project.translations[page.lang] -%}
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ project.name }} | {{ translation.description }}</title>
+  <meta name="description" content="{{ translation.description }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+  <meta property="og:title" content="{{ project.name }}" />
+  <meta property="og:description" content="{{ translation.description }}" />
+  <meta property="og:locale" content="{{ page.lang }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:site_name" content="{{ project.name }}" />
+
+  <script type="application/ld+json">
+    {
+      "description": "{{ translation.description }}",
+      "@type": "WebPage",
+      "url": "{{ page.url | absolute_url }}",
+      "headline": "{{ project.name }}",
+      "@context": "http://schema.org"
+    }
+  </script>
+
+  <link rel="stylesheet" href="{{ '/assets/' | append: page.project | append: '.css' | relative_url }}" />
+
 </head>

@@ -1,32 +1,24 @@
+{%- assign project = site.data.projects[page.project] -%}
+{%- assign translations = project.translations[page.lang] -%}
+
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+        <h3 class="footer-heading">{{ translations.legal | escape }}</h3>
+        {% assign privacy_page = site.pages | where: 'lang', page.lang | where: 'ref', 'privacy' | first %}
+        <a href="{{ privacy_page.url | relative_url }}">{{ translations.privacy | escape }}</a>
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        <h3 class="footer-heading">{{ translations.contacts | escape }}</h3>
+        <a href="mailto:{{ project.email }}">{{ project.email }}</a>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
       </div>
     </div>
 
