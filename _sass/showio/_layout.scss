@@ -215,7 +215,7 @@ img:not(.svg) {
 
   .appstore {
     width: 220px;
-    margin: $spacing-unit 0;
+    margin-top: $spacing-unit;
 
     @include media-query($on-phone) {
       margin: $spacing-unit / 2 0;
