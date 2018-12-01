@@ -13,7 +13,7 @@
   &:hover,
   &:visited {
     text-decoration: none;
-    color: $grey-color-dark;
+    color: $gray-color-dark;
   }
 }
 
@@ -35,7 +35,12 @@
 .site-footer {
   @include relative-font-size(0.85);
   padding: $spacing-unit 0;
-  background-color: $grey-color-accent;
+  background-color: $gray-color-accent;
+}
+
+.flex-footer {
+  flex: 1;
+  background: $gray-color-accent;
 }
 
 .footer-heading {
@@ -44,7 +49,7 @@
 }
 
 .footer-col-wrapper {
-  color: $grey-color;
+  color: $gray-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
@@ -94,10 +99,6 @@
 /**
  * Page content
  */
-.page-content {
-  flex: 1;
-}
-
 .page-heading {
   @include relative-font-size(2);
 }
