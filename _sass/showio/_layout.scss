@@ -85,6 +85,10 @@
     width: calc(100% - (#{$spacing-unit} / 2));
     margin-bottom: $spacing-unit / 2;
   }
+
+  .footer-col-3 {
+    margin-bottom: 0;
+  }
 }
 
 /**

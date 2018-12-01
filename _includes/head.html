@@ -27,6 +27,6 @@
     }
   </script>
 
-  <link rel="stylesheet" href="{{ '/assets/' | append: page.project | append: '.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/' | append: page.project | append: '.css' | relative_url }}?{{site.time | date: '%s%N'}}" />
 
 </head>
