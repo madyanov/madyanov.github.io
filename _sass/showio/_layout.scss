@@ -36,6 +36,7 @@
   @include relative-font-size(0.85);
   padding: $spacing-unit 0;
   background-color: $gray-color-accent;
+  box-shadow: 0 0 10px $gray-color-light;
 }
 
 .flex-footer {
@@ -197,8 +198,8 @@ img:not(.svg) {
   width: calc(50% - (#{$spacing-unit} / 2));
 }
 
-.home-title {
-  padding: $spacing-unit * 3 0;
+.home-description {
+  padding: $spacing-unit * 2 0;
 
   h1 {
     @include relative-font-size(2);
@@ -206,6 +207,10 @@ img:not(.svg) {
     @include media-query($on-pad) {
       @include relative-font-size(1.75);
     }
+  }
+
+  p {
+    color: $gray-color-dark;
   }
 
   @include media-query($on-phone) {
