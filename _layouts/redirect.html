@@ -6,7 +6,7 @@
     (window.navigator.userLanguage || window.navigator.language).split('-')[0] || defaultLanguage
   ).toLowerCase();
 
-  var language = availableLanguages.includes(browserLanguage)
+  var language = availableLanguages.indexOf(browserLanguage) > -1
     ? browserLanguage
     : defaultLanguage;
 
