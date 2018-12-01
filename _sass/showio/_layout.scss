@@ -148,15 +148,18 @@
  * Home
  */
 .home img.preview {
+  min-height: 730px;
   max-width: 400px;
   margin: 0 auto;
 
   @include media-query($on-pad) {
     max-width: 300px;
+    min-height: 300px * 1.825;
   }
 
   @include media-query($on-phone) {
     max-width: 250px;
+    min-height: 250px * 1.825;
   }
 }
 
