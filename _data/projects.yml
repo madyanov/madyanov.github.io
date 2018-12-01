@@ -8,13 +8,14 @@ showio:
   translations:
     en:
       description: Simple application to track your favorite TV shows
+      details: 123
       legal: Legal
       privacy: Privacy Policy
       contacts: Contacts
       appstore_link: "#"
     ru:
       description: Удобное приложение для отслеживания ваших сериалов
-      slog:
+      details: 123
       legal: Правовая информация
       privacy: Политика конфиденциальности
       contacts: Контакты

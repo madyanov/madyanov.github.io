@@ -5,16 +5,16 @@
   <article class="home-col home-col-1">
     <div class="home-description">
       <h1>{{ translations.description }}</h1>
-      <p></p>
+      <p>{{ translations.details }}</p>
       <a href="{{ translations.appstore_link }}">
-        <img src="/assets/images/appstore_{{ page.lang }}.svg" class="appstore svg" />
+        <img src="/assets/{{ page.project }}/images/appstore_{{ page.lang }}.svg" class="appstore svg" />
       </a>
     </div>
   </article>
 
   <article class="home-col home-col-2">
-      <img src="/assets/images/preview_{{ page.lang }}@1x.png" class="preview" />
-      <img src="/assets/images/preview_{{ page.lang }}@2x.png" class="preview retina" />
+      <img src="/assets/{{ page.project }}/images/preview_{{ page.lang }}@1x.png" class="preview" />
+      <img src="/assets/{{ page.project }}/images/preview_{{ page.lang }}@2x.png" class="preview retina" />
   </article>
 
 </section>
