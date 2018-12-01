@@ -174,7 +174,7 @@ img {
 img.retina {
   display: none;
 
-  @include media-query-retina() {
+  @include media-query-retina {
     display: block;
   }
 }
