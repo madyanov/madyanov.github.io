@@ -10,7 +10,7 @@
     </a>
 
     <ul class="language-selector">
-      {% assign pages = site.pages | where: 'ref', page.ref %}
+      {% assign pages = site.pages | where: 'ref', page.ref | sort: 'lang' %}
       {% for translated_page in pages %}
         {% if page.lang == translated_page.lang %}
         <li>{{ translated_page.lang | upcase }}</li>
