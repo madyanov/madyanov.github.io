@@ -13,7 +13,7 @@ showio:
       contacts: Contacts
       appstore_link: "#"
     ru:
-      description: Удобное приложение для отслеживания ваших любимых сериалов
+      description: Удобное приложение для отслеживания ваших сериалов
       slog:
       legal: Правовая информация
       privacy: Политика конфиденциальности

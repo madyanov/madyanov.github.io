@@ -207,20 +207,29 @@ img:not(.svg) {
     @include media-query($on-pad) {
       @include relative-font-size(1.75);
     }
+
+    @include media-query($on-phone) {
+      @include relative-font-size(1.5);
+      margin-bottom: 0;
+    }
   }
 
   p {
     color: $gray-color-dark;
+
+    @include media-query($on-phone) {
+      display: none;
+    }
   }
 
   @include media-query($on-phone) {
-    padding: 0 0 $spacing-unit / 2 0;
+    padding: 0 0 $spacing-unit / 4 0;
     text-align: center
   }
 
   .appstore {
     width: 220px;
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit / 2;
 
     @include media-query($on-phone) {
       margin: $spacing-unit / 2 0;
