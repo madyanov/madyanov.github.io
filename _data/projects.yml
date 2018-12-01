@@ -11,8 +11,10 @@ showio:
       legal: Legal
       privacy: Privacy Policy
       contacts: Contacts
+      appstore_link: "#"
     ru:
       description: Удобный трекер сериалов
       legal: Правовая информация
       privacy: Политика конфиденциальности
       contacts: Контакты
+      appstore_link: "#"

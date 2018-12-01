@@ -148,8 +148,8 @@
  * Home
  */
 .home img.preview {
-  min-height: 730px;
   max-width: 400px;
+  min-height: 400px * 1.825;
   margin: 0 auto;
 
   @include media-query($on-pad) {
@@ -163,19 +163,19 @@
   }
 }
 
-img {
+img:not(.svg) {
   display: block;
 
   @include media-query-retina {
     display: none;
   }
-}
 
-img.retina {
-  display: none;
+  &.retina {
+    display: none;
 
-  @include media-query-retina {
-    display: block;
+    @include media-query-retina {
+      display: block;
+    }
   }
 }
 
@@ -195,6 +195,32 @@ img.retina {
 
 .home-col-2 {
   width: calc(50% - (#{$spacing-unit} / 2));
+}
+
+.home-title {
+  padding: $spacing-unit * 3 0;
+
+  h1 {
+    @include relative-font-size(2);
+
+    @include media-query($on-pad) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  @include media-query($on-phone) {
+    padding: 0 0 $spacing-unit / 2 0;
+    text-align: center
+  }
+
+  .appstore {
+    width: 220px;
+    margin: $spacing-unit 0;
+
+    @include media-query($on-phone) {
+      margin: $spacing-unit / 2 0;
+    }
+  }
 }
 
 @include media-query($on-phone) {

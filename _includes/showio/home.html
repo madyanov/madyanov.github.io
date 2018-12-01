@@ -1,7 +1,15 @@
+{%- assign translations = site.data.projects[page.project].translations[page.lang] -%}
+
 <section class="home">
 
   <article class="home-col home-col-1">
-    &nbsp;
+    <div class="home-title">
+      <h1>Title</h1>
+      <p>Description</p>
+      <a href="{{ translations.appstore_link }}">
+        <img src="/assets/images/appstore_{{ page.lang }}.svg" class="appstore svg" />
+      </a>
+    </div>
   </article>
 
   <article class="home-col home-col-2">
