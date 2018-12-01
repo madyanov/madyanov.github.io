@@ -33,9 +33,8 @@
  * Site footer
  */
 .site-footer {
-  border-top: darken($grey-color-accent, 2.5%) 1px solid;
-  @include relative-font-size(0.875);
-  padding: $spacing-unit 0;
+  @include relative-font-size(0.85);
+  padding: $spacing-unit * 2 0;
   background-color: $grey-color-accent;
 }
 
@@ -52,7 +51,6 @@
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
 }
 
@@ -72,6 +70,7 @@
   .footer-col-1,
   .footer-col-2 {
     width: calc(50% - (#{$spacing-unit} / 2));
+    margin-bottom: $spacing-unit / 2;
   }
 
   .footer-col-3 {
@@ -84,6 +83,7 @@
     float: none;
     text-align: center;
     width: calc(100% - (#{$spacing-unit} / 2));
+    margin-bottom: $spacing-unit / 2;
   }
 }
 
