@@ -146,6 +146,14 @@
   max-width: 400px;
   margin: 0 auto;
   display: block;
+
+  @include media-query($on-pad) {
+    max-width: 350px;
+  }
+
+  @include media-query($on-phone) {
+    max-width: 300px;
+  }
 }
 
 .home {
@@ -164,4 +172,11 @@
 
 .home-col-2 {
   width: calc(50% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-pad) {
+  .home-col-1,
+  .home-col-2 {
+    width: calc(100% - (#{$spacing-unit} / 2));
+  }
 }
