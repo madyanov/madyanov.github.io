@@ -17,14 +17,14 @@
   }
 }
 
-.lang-selector {
+.language-selector {
   float: right;
   line-height: $spacing-unit * 3;
   list-style-type: none;
   margin: 0;
 
   > li {
-    padding: 8px;
+    padding: $spacing-unit / 3;
     display: inline;
   }
 }
@@ -33,17 +33,19 @@
  * Site footer
  */
 .site-footer {
+  border-top: darken($grey-color-accent, 2.5%) 1px solid;
   @include relative-font-size(0.875);
   padding: $spacing-unit 0;
   background-color: $grey-color-accent;
 }
 
 .footer-heading {
-  margin-bottom: $spacing-unit * 0.2;
+  color: $text-color;
+  margin-bottom: $spacing-unit * 0.25;
 }
 
 .footer-col-wrapper {
-  color: $grey-color-dark;
+  color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }

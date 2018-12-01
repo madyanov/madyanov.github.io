@@ -9,7 +9,7 @@
       {{ project.logo | default: project.name | escape }}
     </a>
 
-    <ul class="lang-selector">
+    <ul class="language-selector">
       {% assign pages = site.pages | where: 'ref', page.ref %}
       {% for translated_page in pages %}
         {% if page.lang == translated_page.lang %}
