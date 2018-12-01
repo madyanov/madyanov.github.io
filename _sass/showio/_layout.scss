@@ -148,8 +148,8 @@
  * Home
  */
 .home img.preview {
-  max-width: 400px;
-  min-height: 400px * 1.825;
+  max-width: 375px;
+  min-height: 375px * 1.825;
   margin: 0 auto;
 
   @include media-query($on-pad) {
