@@ -1,14 +1,16 @@
 <script>
-  var defaultLanguage = "en";
-  var availableLanguages = ["{{ site.data.projects[page.project].languages | join: '", "' }}"];
+  window.onload = function () {
+    var defaultLanguage = "en";
+    var availableLanguages = ["{{ site.data.projects[page.project].languages | join: '", "' }}"];
 
-  var browserLanguage = (
-    (window.navigator.userLanguage || window.navigator.language).split('-')[0] || defaultLanguage
-  ).toLowerCase();
+    var browserLanguage = (
+      (window.navigator.userLanguage || window.navigator.language).split('-')[0] || defaultLanguage
+    ).toLowerCase();
 
-  var language = availableLanguages.indexOf(browserLanguage) > -1
-    ? browserLanguage
-    : defaultLanguage;
+    var language = availableLanguages.indexOf(browserLanguage) > -1
+      ? browserLanguage
+      : defaultLanguage;
 
-  window.location.href = "/{{ page.project }}/" + language + "/{{ page.destination }}";
+    window.location.href = "/{{ page.project }}/" + language + "/{{ page.destination }}";
+  };
 </script>
