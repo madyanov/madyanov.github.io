@@ -150,14 +150,29 @@
 .home img.preview {
   max-width: 400px;
   margin: 0 auto;
-  display: block;
 
   @include media-query($on-pad) {
-    max-width: 375px;
+    max-width: 300px;
   }
 
   @include media-query($on-phone) {
-    max-width: 350px;
+    max-width: 250px;
+  }
+}
+
+img {
+  display: block;
+
+  @include media-query-retina {
+    display: none;
+  }
+}
+
+img.retina {
+  display: none;
+
+  @include media-query-retina() {
+    display: block;
   }
 }
 
@@ -179,7 +194,7 @@
   width: calc(50% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-pad) {
+@include media-query($on-phone) {
   .home-col-1,
   .home-col-2 {
     width: calc(100% - (#{$spacing-unit} / 2));
