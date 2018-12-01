@@ -91,7 +91,6 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
   flex: 1;
 }
 
@@ -102,6 +101,10 @@
 /**
  * Posts
  */
+.post {
+  padding: $spacing-unit 0;
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
@@ -140,13 +143,14 @@
  * Home
  */
 .home img.preview {
-  max-width: 317px;
+  max-width: 400px;
   margin: 0 auto;
   display: block;
 }
 
 .home {
   margin-left: -$spacing-unit / 2;
+  padding-top: $spacing-unit / 2;
 }
 
 .home-col {
