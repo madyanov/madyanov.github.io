@@ -5,7 +5,7 @@
   @include relative-font-size(3);
   font-family: "Baloo", $base-font-family;
   font-weight: 300;
-  line-height: $spacing-unit * 3;
+  line-height: $header-height;
   margin-bottom: 0;
   float: left;
 
@@ -19,12 +19,12 @@
 
 .language-selector {
   float: right;
-  line-height: $spacing-unit * 3;
+  line-height: $header-height;
   list-style-type: none;
   margin: 0;
 
   > li {
-    padding: $spacing-unit / 3;
+    padding: 8px;
     display: inline;
   }
 }
@@ -34,7 +34,7 @@
  */
 .site-footer {
   @include relative-font-size(0.85);
-  padding: $spacing-unit * 2 0;
+  padding: $spacing-unit 0;
   background-color: $grey-color-accent;
 }
 
@@ -134,4 +134,30 @@
       @include relative-font-size(1.125);
     }
   }
+}
+
+/**
+ * Home
+ */
+.home img.preview {
+  max-width: 317px;
+  margin: 0 auto;
+  display: block;
+}
+
+.home {
+  margin-left: -$spacing-unit / 2;
+}
+
+.home-col {
+  float: left;
+  padding-left: $spacing-unit / 2;
+}
+
+.home-col-1 {
+  width: calc(50% - (#{$spacing-unit} / 2));
+}
+
+.home-col-2 {
+  width: calc(50% - (#{$spacing-unit} / 2));
 }
