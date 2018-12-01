@@ -152,11 +152,11 @@
   display: block;
 
   @include media-query($on-pad) {
-    max-width: 350px;
+    max-width: 375px;
   }
 
   @include media-query($on-phone) {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
