@@ -4,5 +4,3 @@ project: showio
 lang: ru
 ref: index
 ---
-
-Главная страница
