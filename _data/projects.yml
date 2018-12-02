@@ -8,14 +8,14 @@ showio:
   translations:
     en:
       description: Simple application to track your favorite TV shows
-      details: No longer need to remember in which episode you left off.
+      promotion: No longer need to remember in which episode you left off.
       legal: Legal
       privacy: Privacy Policy
       contacts: Contacts
       appstore_link: "#"
     ru:
       description: Удобное приложение для отслеживания сериалов
-      details: Больше не потребуется вспоминать, на какой серии вы остановились.
+      promotion: Больше не потребуется вспоминать, на какой серии вы остановились.
       legal: Правовая информация
       privacy: Политика конфиденциальности
       contacts: Контакты
