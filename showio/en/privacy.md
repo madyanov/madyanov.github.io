@@ -6,10 +6,10 @@ ref: privacy
 
 title: Privacy Policy
 ---
-
 {%- assign project = site.data.projects[page.project] -%}
 
 Last edited: December 02, 2018
+
 
 ## Summary
 
