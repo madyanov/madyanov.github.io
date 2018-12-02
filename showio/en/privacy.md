@@ -9,6 +9,8 @@ title: Privacy Policy
 
 {%- assign project = site.data.projects[page.project] -%}
 
+Last edited: December 02, 2018
+
 ## Summary
 
 This page informs you of our policies regarding the collection, use and disclosure of information when you use our websites and applications ("Services"). We will not knowingly use or share your information with anyone except as described in this Privacy Policy. We use your personal information for providing and improving the Services we offer.
