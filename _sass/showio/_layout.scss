@@ -4,7 +4,6 @@
 .site-title {
   @include relative-font-size(3);
   font-family: "Baloo", $base-font-family;
-  font-weight: 300;
   line-height: $header-height;
   margin-bottom: 0;
   float: left;
