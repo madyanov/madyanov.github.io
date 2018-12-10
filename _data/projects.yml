@@ -2,6 +2,7 @@ showio:
   name: Showio
   logo: showio
   email: showioapp@protonmail.com
+  appstore_id: 1445035408
   languages:
     - en
     - ru
@@ -12,11 +13,11 @@ showio:
       legal: Legal
       privacy: Privacy Policy
       contacts: Contacts
-      appstore_link: "#"
+      appstore_link: https://itunes.apple.com/app/id1445035408
     ru:
       description: Удобное приложение для отслеживания сериалов
       promotion: Больше не потребуется вспоминать, на какой серии вы остановились.
       legal: Правовая информация
       privacy: Политика конфиденциальности
       contacts: Контакты
-      appstore_link: "#"
+      appstore_link: https://itunes.apple.com/app/id1445035408
