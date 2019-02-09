@@ -233,11 +233,6 @@ img:not(.svg) {
       margin: $spacing-unit / 2 0;
     }
   }
-
-  a {
-    display: block;
-    text-align: center;
-  }
 }
 
 @include media-query($on-phone) {
