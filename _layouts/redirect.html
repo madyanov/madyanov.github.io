@@ -11,6 +11,6 @@
       ? browserLanguage
       : defaultLanguage;
 
-    window.location.href = "/{{ page.project }}/" + language + "/{{ page.destination }}";
+    document.location.replace("/{{ page.project }}/" + language + "/{{ page.destination }}");
   };
 </script>
