@@ -38,16 +38,8 @@ $on-phone:          600px !default;
   font-size: $base-font-size * $ratio;
 }
 
-.center-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 95vh;
-}
-
 .wrapper {
-  padding: $spacing-unit;
+  padding: $spacing-unit * 2;
 
   @include media-query($on-pad) {
     padding: $spacing-unit / 2;
