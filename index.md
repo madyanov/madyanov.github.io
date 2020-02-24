@@ -2,10 +2,10 @@
 layout: home
 lang: en
 title: Roman Madyanov
-description: Roman Madyanov – Software Engineer from Saint Petersburg
+description: Roman Madyanov, Software Engineer from Saint Petersburg
 ---
 
-### Roman Madyanov – Software Engineer from Saint Petersburg.
+### {{ page.description }}.
 
 ### Key Skills
 
@@ -17,8 +17,8 @@ description: Roman Madyanov – Software Engineer from Saint Petersburg
 
 ### Experience
 
-- **2018–present**: Senior iOS Developer in [Center of Financial Technologies](http://cft.ru)
-- **2011–2017**: Antispam Team & Tech Lead, Senior Backend Developer, iOS Developer in [Embria](http://embria.ru)
+- **2018 – present**: Senior iOS Developer in [Center of Financial Technologies](http://cft.ru)
+- **2011 – 2017**: Antispam Team & Tech Lead, Senior Backend Developer, iOS Developer in [Embria](http://embria.ru)
 
 ### Links & Contacts
 
