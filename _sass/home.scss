@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// Define defaults for each variable
+$base-font-family:  Menlo, Monaco, "Lucida Console", monospace !default;
+$base-font-size:    13px !default;
+$base-font-weight:  400 !default;
+$small-font-size:   $base-font-size * 0.875 !default;
+$base-line-height:  1.5 !default;
+
+$spacing-unit:      30px !default;
+
+$text-color:        #d0d0d0 !default;
+$background-color:  #181c20 !default;
+$brand-color:       #c678dd !default;
+
+// Width of the content area
+$content-width:     800px !default;
+
+$on-pad:            600px !default;
+$on-phone:          600px !default;
+
+@mixin media-query($device) {
+  @media (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin media-query-retina {
+  @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi)
+  {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 97.5vh;
+}
+
+.wrapper {
+  padding: $spacing-unit;
+
+  @include media-query($on-pad) {
+    padding: $spacing-unit / 2;
+  }
+}
+
+li {
+  list-style-type: square;
+}
+
+@import "base";

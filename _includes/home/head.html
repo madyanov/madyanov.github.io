@@ -1,0 +1,31 @@
+<head>
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="{{ '/assets/' | append: 'favicon.ico' | relative_url }}" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:locale" content="{{ page.lang }}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:site_name" content="{{ page.title }}" />
+  
+    <script type="application/ld+json">
+      {
+        "description": "{{ page.description }}",
+        "@type": "WebPage",
+        "url": "{{ page.url | absolute_url }}",
+        "headline": "{{ page.title }}",
+        "@context": "http://schema.org"
+      }
+    </script>
+  
+    <link rel="stylesheet" href="{{ '/assets/home.css' | relative_url }}?{{site.time | date: '%s%N'}}" />
+  
+  </head>
+  
