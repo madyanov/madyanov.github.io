@@ -5,7 +5,7 @@ title: Roman Madyanov
 description: Roman Madyanov – Software Engineer from Saint Petersburg
 ---
 
-###  Roman Madyanov – Software Engineer from Saint Petersburg.
+### Roman Madyanov – Software Engineer from Saint Petersburg.
 
 ### Key Skills
 
