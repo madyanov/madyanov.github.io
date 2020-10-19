@@ -17,11 +17,11 @@ description: Roman Madyanov, Software Engineer from Saint Petersburg
 
 ### Experience
 
-- **2018 – present**: Senior iOS Developer at [Center of Financial Technologies](http://cft.ru)
-- **2011 – 2017**: Antispam Team & Tech Lead, Senior Backend Developer, iOS Developer at [Embria](http://embria.ru)
+- **2018 – present**: Senior iOS Developer at [Center of Financial Technologies](https://cft.ru)
+- **2011 – 2017**: Antispam Team & Tech Lead, Senior Backend Developer, iOS Developer at [Embria](https://embria.ru)
 
 ### Links & Contacts
 
 - [CV]({{ '/assets/cv.pdf' | relative_url }}?{{site.time | date: '%s%N'}}) (RU)
-- [GitHub](http://github.com/madyanov)
+- [GitHub](https://github.com/madyanov)
 - Telegram: [@madyanov](tg://resolve?domain=madyanov)
