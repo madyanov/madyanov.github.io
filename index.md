@@ -9,11 +9,11 @@ description: Roman Madyanov, Software Engineer from Saint Petersburg
 
 ### Key Skills
 
-- **iOS App Development**: Swift, Objective-C, Auto Layout, MVP, CLEAN
-- **Highload Systems**: queues, caches, monitoring, sharding, scalability & availability
-- **PHP**: Zend, Laravel, MVC
+- **iOS**: MVP, Swift, Objective-C, Auto Layout
+- **Highload**: queues, caches, monitoring, sharding, scalability & availability
+- **C++**: OpenCV, OpenGL, image processing, pattern recognition
 - **SQL**: mainly worked with MySQL
-- **OpenCV**: C++, image processing, pattern recognition
+- **PHP**: Zend, Laravel, MVC
 
 ### Experience
 
